@@ -1,4 +1,5 @@
 <?php
+include 'header.php';
 session_start();
 if (!isset($_SESSION['user_id'])) header("Location: login.php");
 include 'config/db.php';
@@ -18,4 +19,5 @@ while ($row = $res->fetch_assoc()) {
     echo "<a href='edit.php?id={$row['id']}'>Edit</a> | <a href='delete.php?id={$row['id']}'>Delete</a>";
     echo "<hr>";
 }
+include 'footer.php';
 ?>

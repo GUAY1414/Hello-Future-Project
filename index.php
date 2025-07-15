@@ -4,10 +4,11 @@ if (isset($_SESSION['user_id'])) {
     header("Location: dashboard.php");
     exit();
 }
+include 'header.php';
 ?>
-
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Hello, future!</title>
     <link rel="stylesheet" href="styles.css">
@@ -20,3 +21,6 @@ if (isset($_SESSION['user_id'])) {
     <a href="register.php">📝 Register</a>
 </body>
 </html>
+<?php
+include 'footer.php';
+?>
