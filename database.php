@@ -12,6 +12,6 @@
         echo "You are connected!";
     }
     else{
-        echo"Could not connect!";
+        echo"Could not connected !";
     }
 ?>
