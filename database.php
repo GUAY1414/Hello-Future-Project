@@ -6,12 +6,12 @@
     $db_name = "projectdb";
     $conn = "";
 
-    $conn = mysqli_connect($db_server, $db_user, $db_pass, $db_name);
+    try{
 
-    if($conn){
-        echo "You are connected!";
+        $conn = mysqli_connect($db_server, $db_user, $db_pass, $db_name);
     }
-    else{
-        echo"Could not connected !";
-    }
+    catch(mysqli_sql_exception){
+        echo "Could not connect!";
+    }        
+    
 ?>
