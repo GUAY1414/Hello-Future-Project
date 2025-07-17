@@ -4,7 +4,7 @@ if (isset($_SESSION['user_id'])) {
     header("Location: dashboard.php");
     exit();
 }
-include 'database.php';
+include 'includes/dbconnection.php';
 include 'header.php';
 ?>
 <!DOCTYPE html>
