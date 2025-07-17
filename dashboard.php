@@ -2,7 +2,7 @@
 include 'header.php';
 session_start();
 if (!isset($_SESSION['user_id'])) header("Location: login.php");
-include 'config/db.php';
+include 'includes/dbconnection.php';
 
 $id = $_SESSION['user_id'];
 $res = $conn->query("SELECT * FROM memories WHERE user_id=$id ORDER BY created_at DESC");

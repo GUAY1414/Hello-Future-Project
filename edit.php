@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'config/db.php';
+include 'includes/dbconnection.php';
 $id = $_GET['id'];
 if (!isset($_SESSION['user_id'])) header("Location: login.php");
 

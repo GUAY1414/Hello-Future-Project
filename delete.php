@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'config/db.php';
+include 'includes/dbconnection.php';
 $id = $_GET['id'];
 if ($conn->query("DELETE FROM memories WHERE id=$id") === TRUE) {
 	header("Location: dashboard.php");

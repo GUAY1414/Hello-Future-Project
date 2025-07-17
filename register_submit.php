@@ -1,6 +1,6 @@
 <?php
     
-    require "config/db.php";
+    require "includes/dbconnection.php";
 
     $username           = $_POST['uname'];
     $password           = $_POST['pword'];
