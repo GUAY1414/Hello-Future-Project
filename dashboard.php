@@ -18,6 +18,7 @@ while ($row = $res->fetch_assoc()) {
     if ($row['file']) {
         echo "<a href='uploads/{$row['file']}'>View Attachment</a><br>";
     }
+    echo "<a href='view.php?id={$row['id']}'>View</a> | ";
     echo "<a href='edit.php?id={$row['id']}'>Edit</a> | <a href='delete.php?id={$row['id']}'>Delete</a>";
     echo "<hr>";
 }
